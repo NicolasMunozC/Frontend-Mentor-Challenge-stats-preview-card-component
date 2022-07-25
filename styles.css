@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color:hsl(233, 47%, 7%);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+}
+
+.card{
+    margin: 90px auto;
+    width: 300px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.imageCard {
+    height: 220px;
+    background-image: url("./images/image-header-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 40px;
+    background-color: black;
+}
+
+.imageFilter{
+    background-color: hsl(277, 99%, 35%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.cardTitle{
+font-family: 'Inter', sans-serif;
+font-size: 25px;
+padding: 0 30px;
+font-weight: 700;
+}
+
+.cardTitle span{
+color: hsl(277, 64%, 61%);
+}
+
+.cardParagraph{
+    color: hsla(0, 0%, 100%, 0.65);
+    margin: 20px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 0 40px;
+    font-weight: 400;
+}
+
+.stats{
+    margin: 40px 0;
+}
+
+.stats h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+}
+
+.stats h4{
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-bottom: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 5px 0 20px 0 ;
+}
+
+
+.attribution{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1100px;
+        height: 400px;
+        margin: auto;
+    }
+
+    .imageCard {
+        height: 100%;
+        width: 50%;
+        background-image: url("./images/image-header-desktop.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .imageFilter{
+        background-color: hsl(277, 99%, 35%);
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .textCard{
+        width: 50%;
+        margin: auto;
+        text-align: left;
+        padding: 40px 80px;
+    }
+
+    .cardTitle{
+        padding: 0 0px;
+        font-size: 35px;
+    }
+
+    .cardParagraph{
+        padding: 0 0px;
+    }
+
+    .stats{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+}
